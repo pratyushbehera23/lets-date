@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Do you wanna go out for a movie with me Khushi?</h1>
+            <!-- <h1 class="header_text">Khushi</h1> -->
+        </div>
+        <div class="gif_container">
+            <img src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif" alt="Cute animated illustration" />
+        </div>
+        <div class="buttons">
+            <!-- <a class="btn" id="yesButton" href="https://wa.me/7978389641" target="_blank"> Yes </a> -->
+            <button class="btn" id="yesButton" onclick="nextPage()"> Yes </button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()"> No </button>
+        </div>
+    </div>
+
+    <script>
+        function nextPage() {
+            window.location.href = "yes.html";
+        }
+        function moveButton() {
+            var x =
+                Math.random() *
+                (window.innerWidth - 200 -
+                    document.getElementById("noButton").offsetWidth);
+            var y =
+                Math.random() *
+                (window.innerHeight - 100 -
+                    document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
