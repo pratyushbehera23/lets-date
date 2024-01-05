@@ -4,12 +4,14 @@
 } */
 
 body {
-    font-family: cursive;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(#ff3bd5, #800082);
+    background: linear-gradient(#f9a8d4, #e879f9);
 }
 .container {
     margin: 64px;
